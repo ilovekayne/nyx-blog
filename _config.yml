@@ -1,0 +1,38 @@
+title: "Kayne After Dark"
+description: "Late night thoughts about Kayne, in dark mode, the way nature intended"
+url: "https://nyx.ilovekayne.xyz"
+theme: jekyll-theme-nyx
+author: "the night owls"
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+# None of this ships inside the theme gem, so the site has to define it itself.
+collections:
+  tabs:
+    output: true
+    permalink: /:name/
+    sort_by: order
+
+plugins:
+  - jekyll-toc
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title/
+      toc: true
+      author: "the night owls"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
