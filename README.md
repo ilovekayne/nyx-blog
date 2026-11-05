@@ -10,4 +10,3 @@ What a gem theme does NOT bring with it, and this repo has to supply itself:
 - `_layouts/category.html` and `_layouts/tag.html` (the taxonomy plugin reads layouts from the site source, not the gem)
 - the posts `defaults` block (layout, permalink, toc, author)
 
-Set the repo's Pages source to **GitHub Actions**.
